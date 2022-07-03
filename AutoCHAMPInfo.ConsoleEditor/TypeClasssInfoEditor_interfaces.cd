@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="8.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="System.Collections.Generic.List&lt;T&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object">
+    <Position X="8" Y="0.5" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TypeRentsInfo.TypeRenty">
+    <Position X="8" Y="3.5" Width="4.75" />
+    <InheritanceLine Type="TypeRentsInfo.Entity" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.25" Y="1.603" />
+        <Point X="12.25" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAAAAAAAAAEAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>TypeRenty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.DataContext" HideInheritanceLine="true">
+    <Position X="14.25" Y="4.75" Width="3.5" />
+    <AssociationLine Name="dataSet" Type="TypeRentsInfo.DataSet" FixedToPoint="true">
+      <Path>
+        <Point X="15.375" Y="4.75" />
+        <Point X="15.375" Y="4.103" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.822" Y="0.096" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="xmlFileIoController" Type="TypeRentsInfo.XmlFileIoController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="5.75" />
+        <Point X="13.188" Y="5.75" />
+        <Point X="13.188" Y="6.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QBAAgIAAAABAAAAEAAAABQAAAAAAEAAAAEAAAABAAAI=</HashCode>
+      <FileName>DataContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataSet" />
+      <Field Name="xmlFileIoController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.Entering">
+    <Position X="18.5" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAACAAAAAAAAAAEAAAACgAAAAA=</HashCode>
+      <FileName>Entering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.ConsoleEditor.Program" HideInheritanceLine="true">
+    <Position X="18.75" Y="3" Width="2.5" />
+    <AssociationLine Name="dataContext" Type="TypeRentsInfo.DataContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.75" Y="3.577" />
+        <Point X="17.312" Y="3.577" />
+        <Point X="17.312" Y="4.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="editor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.Settings">
+    <Position X="24" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.DataSet" HideInheritanceLine="true">
+    <Position X="14.25" Y="3" Width="1.5" />
+    <AssociationLine Name="TypeRents" Type="TypeRentsInfo.TypeRenty" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="4.103" />
+        <Point X="15" Y="4.5" />
+        <Point X="12.75" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.157" Y="0.118" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataSet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TypeRents" />
+      <Property Name="Rent" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.XmlFileIoController" HideInheritanceLine="true">
+    <Position X="8" Y="6.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwIAQAAAAAAAAAAAAAQAEAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XmlFileIoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.Rent">
+    <Position X="14.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.Entity">
+    <Position X="12" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.Editor" HideInheritanceLine="true">
+    <Position X="22.75" Y="0.5" Width="3.5" />
+    <AssociationLine Name="dataContext" Type="TypeRentsInfo.DataContext" FixedFromPoint="true">
+      <Path>
+        <Point X="22.75" Y="5.125" />
+        <Point X="17.75" Y="5.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="commandsInfo" Type="TypeRentsInfo.CommandInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.75" Y="2.366" />
+        <Point X="21.812" Y="2.366" />
+        <Point X="21.812" Y="2.055" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACAAABABABAAARAEAEBIEAAAAFAAAAAAAAAURICAgAI=</HashCode>
+      <FileName>Editor.commands.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="commandsInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.EnumerableMethods">
+    <Position X="18.5" Y="8" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnumerableMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TypeRentsInfo.CommandInfo">
+    <Position X="18.75" Y="0.5" Width="3.5" />
+    <AssociationLine Name="command" Type="TypeRentsInfo.Command" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.75" Y="1.712" />
+        <Point X="18" Y="1.712" />
+        <Point X="18" Y="1.368" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="command" />
+    </ShowAsAssociation>
+  </Struct>
+  <Interface Name="System.Collections.Generic.IEnumerable&lt;T&gt;">
+    <Position X="2" Y="4.25" Width="2.5" />
+    <InheritanceLine Type="System.Collections.IEnumerable" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="3.437" />
+        <Point X="3.75" Y="3.437" />
+        <Point X="3.75" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.IEnumerable">
+    <Position X="0.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.Generic.IEnumerator&lt;T&gt;">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <InheritanceLine Type="System.Collections.IEnumerator" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="1.188" />
+        <Point X="2.75" Y="1.188" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.IDisposable">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.IEnumerator">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;">
+    <Position X="4.75" Y="2.25" Width="2.5" />
+    <InheritanceLine Type="System.Collections.IEnumerable" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="2.938" />
+        <Point X="4.75" Y="2.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.Generic.IReadOnlyList&lt;T&gt;">
+    <Position X="1.25" Y="5.75" Width="2" />
+    <InheritanceLine Type="System.Collections.Generic.IEnumerable&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.688" Y="5.483" />
+        <Point X="2.688" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="System.Collections.IEnumerable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.625" Y="3.853" />
+        <Point X="1.625" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="System.Collections.Generic.IReadOnlyCollection&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.625" Y="7.5" />
+        <Point X="1.625" Y="7.242" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.Generic.IReadOnlyCollection&lt;T&gt;">
+    <Position X="0.5" Y="7.5" Width="2.25" />
+    <InheritanceLine Type="System.Collections.Generic.IEnumerable&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.062" Y="5.483" />
+        <Point X="4.062" Y="8.125" />
+        <Point X="2.75" Y="8.125" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="System.Collections.IEnumerable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.875" Y="3.853" />
+        <Point X="0.875" Y="7.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Interface>
+  <Delegate Name="TypeRentsInfo.Command">
+    <Position X="17" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandInfo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

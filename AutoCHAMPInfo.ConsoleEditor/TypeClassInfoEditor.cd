@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="System.Object">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TypeRentsInfo.TypeRenty">
+    <Position X="0.5" Y="3.5" Width="4.75" />
+    <InheritanceLine Type="TypeRentsInfo.Entity" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="1.603" />
+        <Point X="4.75" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAAAAAAAAAEAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>TypeRenty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.DataContext" HideInheritanceLine="true">
+    <Position X="6.75" Y="4.75" Width="3.5" />
+    <AssociationLine Name="dataSet" Type="TypeRentsInfo.DataSet" FixedToPoint="true">
+      <Path>
+        <Point X="7.875" Y="4.75" />
+        <Point X="7.875" Y="4.103" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.822" Y="0.096" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="xmlFileIoController" Type="TypeRentsInfo.XmlFileIoController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.75" />
+        <Point X="5.688" Y="5.75" />
+        <Point X="5.688" Y="6.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QBAAgIAAAABAAAAEAAAABQAAAAAAEAAAAEAAAABAAAI=</HashCode>
+      <FileName>DataContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataSet" />
+      <Field Name="xmlFileIoController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.Entering">
+    <Position X="11" Y="5.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAACAAAAAAAAAAEAAAACgAAAAA=</HashCode>
+      <FileName>Entering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.ConsoleEditor.Program" HideInheritanceLine="true">
+    <Position X="11.25" Y="3" Width="2.5" />
+    <AssociationLine Name="dataContext" Type="TypeRentsInfo.DataContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="3.577" />
+        <Point X="9.812" Y="3.577" />
+        <Point X="9.812" Y="4.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="editor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.Settings">
+    <Position X="16.5" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.DataSet" HideInheritanceLine="true">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <AssociationLine Name="TypeRents" Type="TypeRentsInfo.TypeRenty" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="4.103" />
+        <Point X="7.5" Y="4.5" />
+        <Point X="5.25" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.157" Y="0.118" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataSet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TypeRents" />
+      <Property Name="Rent" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.XmlFileIoController" HideInheritanceLine="true">
+    <Position X="0.5" Y="6.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwIAQAAAAAAAAAAAAAQAEAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XmlFileIoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.Rent">
+    <Position X="6.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.Entity">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TypeRentsInfo.Editor" HideInheritanceLine="true">
+    <Position X="15.25" Y="0.5" Width="3.5" />
+    <AssociationLine Name="commandsInfo" Type="TypeRentsInfo.CommandInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="2.366" />
+        <Point X="14.312" Y="2.366" />
+        <Point X="14.312" Y="2.055" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dataContext" Type="TypeRentsInfo.DataContext" FixedFromPoint="true">
+      <Path>
+        <Point X="15.25" Y="5.125" />
+        <Point X="10.25" Y="5.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACAAABABABAAARAEAEBIEAAAAFAAAAAAAAAURICAgAI=</HashCode>
+      <FileName>Editor.commands.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="commandsInfo" />
+      <Field Name="dataContext" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeRentsInfo.EnumerableMethods">
+    <Position X="11" Y="8" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnumerableMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TypeRentsInfo.CommandInfo">
+    <Position X="11.25" Y="0.5" Width="3.5" />
+    <AssociationLine Name="command" Type="TypeRentsInfo.Command" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="1.712" />
+        <Point X="10.5" Y="1.712" />
+        <Point X="10.5" Y="1.368" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="command" />
+    </ShowAsAssociation>
+  </Struct>
+  <Delegate Name="TypeRentsInfo.Command">
+    <Position X="9.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandInfo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
